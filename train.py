@@ -30,10 +30,8 @@ TRAIN_IMG_DIR = "./data/train"
 TRAIN_MASK_DIR = "./data/train_masks"
 VAL_IMG_DIR = "./data/val"
 VAL_MASK_DIR = "./data/val_masks"
-CKPT_DIR = "./checkpoint/checkpoint.pt"
+CKPT_DIR = "./checkpoint.pt"
 
-if os.path.exists("./checkpoint") == False:
-    os.makedirs("./checkpoint")
 
 
 def train_step(model, optimizer, dataloader, crit, scaler):
