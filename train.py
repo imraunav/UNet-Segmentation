@@ -114,7 +114,7 @@ def main():
 
     scaler = torch.cuda.amp.GradScaler()
     for epoch in range(start, MAX_EPOCH):
-        print(f"Epoch : {epoch+1} | ", end="")
+        print(f"Epoch : {epoch+1}")
         train_loss.append(train_step(model, optimizer, train_loader, crit, scaler))
         print(f"Train loss : {train_loss[-1]}")
         check_accuracy(val_loader, model, device)
