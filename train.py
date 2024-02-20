@@ -21,7 +21,7 @@ from utils import (
 LR = 3e-4  # Karpathy's recommendation
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 BATCH_SIZE = 32
-MAX_EPOCH = 50
+MAX_EPOCH = 500
 NUM_WORKERS = 2
 IMG_HEIGHT = 161
 IMG_WEIGHT = 161
